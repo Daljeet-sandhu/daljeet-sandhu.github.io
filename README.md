@@ -1,5 +1,5 @@
 ## Portfolio site 
 
-### LINK: https://daljeet.github.io/
+### LINK: https://daljeet-sandhu.github.io/
 
 Complete Website
