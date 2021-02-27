@@ -515,7 +515,7 @@ p {
 .profile-card .profile-bio {
   width: auto;
   height: auto;
-  padding: 55px 20px 35px;
+  padding: 55px 0px 35px;
   display: block;
   float: none;
 }
@@ -553,6 +553,9 @@ p {
   }
 }
 
+
+/* Typewriter container */
+
 #container {
 	text-align: center;
 }
@@ -581,3 +584,11 @@ p {
 		background-color: black; 
 	}
 }
+
+
+.logo-main{
+	width: 20px;
+  height: auto;
+}
+
+
