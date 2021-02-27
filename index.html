@@ -42,7 +42,7 @@
                             <!-- name -->
                             <h1 class="unselectable">Daljeet Singh</h1>
                             <!-- role -->
-                            <h2 class="unselectable">Software Developer</h2>
+                            <h2 class="unselectable"><img src="img/logo1.png" class="unselectable logo-main">University of Windsor</h2>
                         </header>
                         <div class="profile-bio">
                             <p class="unselectable">
@@ -81,7 +81,6 @@
         <!-- =================== script =================== -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-        <script src="lib/parallax.js-1.4.2/parallax.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
 
         <!-- particles js -->
@@ -104,9 +103,12 @@ $(document).ready(function(){
 
 		<script>
 		// List of sentences
+var img1 = "<img src='img/logo2.png' class='logo-main'>";
+var img2 = "<img src='img/logo3.png' class='logo-main'>";
+
 var _CONTENT = [ 
-	"Software Developer(Oceania Inn)", 
-	"Social Media Consultant(Montax)"
+	img1 + " Software Developer | Oceania Inn", 
+	img2 + " Social Media Consultant | Montax"
 ];
 
 // Current sentence being processed
@@ -255,8 +257,6 @@ _INTERVAL_VAL = setInterval(Type, 100);
                     var tickIndex = $(this).index();
                     $('body').scrollTop($(window).height() * tickIndex);
                 });
-
-                updatePos();
             }); // end document ready -------
 
 
