@@ -9,6 +9,9 @@
         integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
     <!-- main style -->
     <link rel="stylesheet" type="text/css" href="css/main.css?v=2018.09.20">
     <link rel="shortcut icon" href="img/hd.jpg" type="image/x-icon">
@@ -49,19 +52,23 @@
                         </div>
                         <!-- social links -->
                         <ul class="profile-social-links">
-                            <li><a target="_blank" href="https://www.linkedin.com/in/daljeet-sandhu/">
+                            <li><a target="_blank" href="https://www.linkedin.com/in/daljeet-sandhu/"
+            							data-toggle="tooltip" data-placement="top" title="Experience">
                                     <i class="fa fa-lg fa-linkedin"></i>
                                 </a>
                             </li>
-                            <li><a target="_blank" href="https://drive.google.com/file/d/1MnjZvdfZVc-qWlyguQu6CJtcJ6a6tPLV/view?usp=sharing">
+                            <li><a target="_blank" href="https://drive.google.com/file/d/1MnjZvdfZVc-qWlyguQu6CJtcJ6a6tPLV/view?usp=sharing"
+							           data-toggle="tooltip" data-placement="top" title="Resume" >
                                     <i class="fa fa-lg fa-newspaper-o"  style="color:black"></i>
                                 </a>
                             </li>
-                            <li><a target="_blank" href="https://github.com/Daljeet-sandhu">
+                            <li><a target="_blank" href="https://github.com/Daljeet-sandhu"
+							            data-toggle="tooltip" data-placement="top" title="Projects">
                                     <i class="fa fa-lg fa-github"></i>
                                 </a>
                             </li>
-                            <li><a target="_blank" href="mailto:singh1v7@uwindsor.ca">
+                            <li><a target="_blank" href="mailto:singh1v7@uwindsor.ca"
+							         data-toggle="tooltip" data-placement="top" title="Contact">
                                     <i class="fa fa-envelope" style="color:black"></i>
                                 </a>
                             </li>
@@ -89,6 +96,12 @@
         <!-- main js file -->
         <script src="js/main.js"></script>
 		
+		<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+        </script>
+
 		<script>
 		// List of sentences
 var _CONTENT = [ 
