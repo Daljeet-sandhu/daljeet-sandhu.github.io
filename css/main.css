@@ -567,6 +567,10 @@ p {
 	font-size: 80%;
 }
 
+#img {
+	display: inline-block;
+}
+
 #cursor {
 	display: inline-block;
 	vertical-align: middle;
