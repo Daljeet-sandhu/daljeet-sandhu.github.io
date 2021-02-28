@@ -47,7 +47,7 @@
                         <div class="profile-bio">
                             <p class="unselectable">
                                 Passionate about technology
-                                <br><div id="container"><div id="text"></div><div id="cursor"></div></div>
+                                <br><div id="container"><div id="img"></div><div id="text"></div><div id="cursor"></div></div>
                             </p>
                         </div>
                         <!-- social links -->
@@ -103,12 +103,13 @@ $(document).ready(function(){
 
 		<script>
 		// List of sentences
+
 var img1 = "<img src='img/logo2.png' class='logo-main'>";
 var img2 = "<img src='img/logo3.png' class='logo-main'>";
 
 var _CONTENT = [ 
-	img1 + " Software Developer | Oceania Inn", 
-	img2 + " Social Media Consultant | Montax"
+	" Software Developer | Oceania Inn", 
+	" Social Media Consultant | Montax"
 ];
 
 // Current sentence being processed
@@ -120,9 +121,12 @@ var _PART_INDEX = 0;
 // Holds the handle returned from setInterval
 var _INTERVAL_VAL;
 
+var imageLogo = document.querySelector("#img");
+
 // Element that holds the text
 var _ELEMENT = document.querySelector("#text");
 
+var count=0;
 // Cursor element 
 var _CURSOR = document.querySelector("#cursor");
 
@@ -132,12 +136,18 @@ function Type() {
 	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
 	_ELEMENT.innerHTML = text;
 	_PART_INDEX++;
+	
+	if (count%2 == 0){
+    imageLogo.innerHTML = img1;
+    } else {
+    imageLogo.innerHTML = img2;
+    }
+	
 
 	// If full sentence has been displayed then start to delete the sentence after some time
 	if(text === _CONTENT[_PART]) {
 		// Hide the cursor
 		_CURSOR.style.display = 'none';
-
 		clearInterval(_INTERVAL_VAL);
 		setTimeout(function() {
 			_INTERVAL_VAL = setInterval(Delete, 50);
@@ -151,11 +161,12 @@ function Delete() {
 	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
 	_ELEMENT.innerHTML = text;
 	_PART_INDEX--;
-
+	count = count + 1;
+	
 	// If sentence has been deleted then start to display the next sentence
 	if(text === '') {
 		clearInterval(_INTERVAL_VAL);
-
+		
 		// If current sentence was last then display the first one, else move to the next
 		if(_PART == (_CONTENT.length - 1))
 			_PART = 0;
