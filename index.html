@@ -16,8 +16,8 @@
 	
     <!-- main style -->
     <link rel="stylesheet" type="text/css" href="css/main.css?v=2018.09.20">
-    <link rel="shortcut icon" href="img/hd.jpg" type="image/x-icon">
-    <link rel="icon" href="img/hd.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/hd.png" type="image/x-icon">
+    <link rel="icon" href="img/hd.png" type="image/x-icon">
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W5MELYMLP5"></script>
@@ -40,9 +40,9 @@
                     <div class="profile-card">
                         <header>
                             <!-- avatar -->
-                            <a><img src="img/hd.jpg" class="unselectable"></a>
+                            <a><img src="img/hd.png" class="unselectable"></a>
                             <!-- name -->
-                            <h1 class="unselectable">Daljeet Singh</h1>
+                            <h1 class="unselectable" >Daljeet Singh</h1>
                             <!-- role -->
                             <h2 class="unselectable"><img src="img/logo1.png" class="unselectable logo-main">University of Windsor</h2>
                         </header>
@@ -56,22 +56,22 @@
                         <ul class="profile-social-links">
                             <li><a target="_blank" href="https://www.linkedin.com/in/daljeet-sandhu/"
             							data-toggle="tooltip" data-placement="bottom" title="Experience">
-                                    <i class="fab fa-lg fa-linkedin"  style="color:rgba(120,120,120,.75)"  onMouseOver="this.style.color='black'" onMouseOut="this.style.color='rgba(120,120,120,.75)'"></i>
+                                    <i class="fab fa-lg fa-linkedin"  style="color:rgba(120,120,120,.75)"  onMouseOver="this.style.color='rgb(100,149,237)'" onMouseOut="this.style.color='rgba(120,120,120,.75)'"></i>
                                 </a>
                             </li>
                             <li><a target="_blank" href="https://drive.google.com/file/d/1MnjZvdfZVc-qWlyguQu6CJtcJ6a6tPLV/view?usp=sharing"
 							           data-toggle="tooltip" data-placement="bottom" title="Resume" >
-                                    <i class='fas fa-scroll fa-lg' style="color:rgba(120,120,120,.75)"  onMouseOver="this.style.color='black'" onMouseOut="this.style.color='rgba(120,120,120,.75)'"></i>
+                                    <i class='fas fa-scroll fa-lg' style="color:rgba(120,120,120,.75)"  onMouseOver="this.style.color='rgb(100,149,237)'" onMouseOut="this.style.color='rgba(120,120,120,.75)'"></i>
                                 </a>
                             </li>
                             <li><a target="_blank" href="https://github.com/Daljeet-sandhu"
 							            data-toggle="tooltip" data-placement="bottom" title="Projects">
-                                    <i class="fab fa-lg fa-github " style="color:rgba(120,120,120,.75)"  onMouseOver="this.style.color='black'" onMouseOut="this.style.color='rgba(120,120,120,.75)'"></i>
+                                    <i class="fab fa-lg fa-github " style="color:rgba(120,120,120,.75)"  onMouseOver="this.style.color='rgb(100,149,237)'" onMouseOut="this.style.color='rgba(120,120,120,.75)'"></i>
                                 </a>
                             </li>
                             <li><a target="_blank" href="mailto:singh1v7@uwindsor.ca"
 							         data-toggle="tooltip" data-placement="bottom" title="Contact">
-                                    <i class="fa fa-envelope " style="color:rgba(120,120,120,.75)"  onMouseOver="this.style.color='black'" onMouseOut="this.style.color='rgba(120,120,120,.75)'"></i>
+                                    <i class="fa fa-envelope " style="color:rgba(120,120,120,.75)"  onMouseOver="this.style.color='rgb(100,149,237)'" onMouseOut="this.style.color='rgba(120,120,120,.75)'"></i>
                                 </a>
                             </li>
                         </ul>
@@ -152,7 +152,7 @@ function Type() {
 	// If full sentence has been displayed then start to delete the sentence after some time
 	if(text === _CONTENT[_PART]) {
 		// Hide the cursor
-		_CURSOR.style.display = 'none';
+		_CURSOR.style.display = 'inline-block';
 		clearInterval(_INTERVAL_VAL);
 		setTimeout(function() {
 			_INTERVAL_VAL = setInterval(Delete, 50);
