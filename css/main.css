@@ -556,7 +556,7 @@ p {
 #cursor {
 	display: inline-block;
 	vertical-align: middle;
-	width: 3px;
+	width: 2px;
 	height: 20px;
 	background-color: black;
 	animation: blink .75s step-end infinite;
@@ -574,7 +574,18 @@ p {
 
 .logo-main{
 	width: 20px;
-  height: auto;
+    height: auto;	
 }
 
+
+.tooltip { 
+    font-family: inherit; 
+} 
+.tooltip-inner { 
+    background-color: rgb(100,149,237); 
+}
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before { 
+    border-bottom-color: rgb(100,149,237);
+}
 
