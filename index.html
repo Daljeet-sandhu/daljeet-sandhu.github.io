@@ -42,7 +42,18 @@
                             <!-- avatar -->
                             <a><img src="img/hd.png" class="unselectable"></a>
                             <!-- name -->
-                            <h1 class="unselectable" >Daljeet Singh</h1>
+							<audio id="myAudio" preload="auto">
+                                    <source src="img/song.mp3" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                            </audio>
+                            <h1 class="unselectable" > <button onclick="playAudio()" type="button" id="btn1"
+							data-toggle="tooltip" data-placement="top" title="Music" onMouseOver="this.style.cursor='pointer'"
+							style=" background-color:white;
+							border: none;
+							color: #FF5722;
+							outline:none;
+							">Daljeet Singh
+							</h1>
                             <!-- role -->
                             <h2 class="unselectable"><img src="img/logo1.png" class="unselectable logo-main">University of Windsor</h2>
                         </header>
@@ -75,9 +86,11 @@
                                 </a>
                             </li>
                         </ul>
+						
                     </div>
                 </div>
             </div>
+			
         </section>
         
 	</div>	
@@ -100,6 +113,43 @@
         <!-- main js file -->
         <script src="js/main.js"></script>
 		
+		<script>
+var x = document.getElementById("myAudio"); 
+var isPlaying = false;
+
+function playAudio() { 
+  isPlaying ? x.pause() : x.play();
+  isPlaying = ! isPlaying;
+  
+var myClock = document.getElementById('btn1');
+var myClock2 = document.getElementById('btn2');
+var displaySetting = myClock.style.display;
+var displaySetting2 = myClock2.style.display;
+ if (displaySetting == 'inline') {
+      myClock.style.display = 'none';
+	  myClock2.style.display = 'inline';
+    }
+    else {
+      myClock2.style.display = 'none';
+      myClock.style.display = 'inline';
+    }
+} 
+		</script>		
+		<script>
+$(document).ready(function(){
+  $('.button').hide(0);  //or do it through css
+  $('button.btn1').click(function(){
+     $('.button').show();
+
+  });
+
+ //otherTab is the class for the tabs other than tab1
+ $('button.btn2').click(function(){
+    $('.button').hide();
+ });
+
+});
+</script>
 		<script>
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();   
