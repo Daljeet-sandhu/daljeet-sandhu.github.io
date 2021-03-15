@@ -2,7 +2,7 @@
 
 ### LINK: https://daljeet-sandhu.github.io/
 
-Portfolio Version 2  [v1](#v1 "https://github.com/Daljeet-sandhu/Portfolio-v1")
+Portfolio Version 2  [v1](https://github.com/Daljeet-sandhu/Portfolio-v1)
 
 ## Texhnoligies Used
 * JavaScript
