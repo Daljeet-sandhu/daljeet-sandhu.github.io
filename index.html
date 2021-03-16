@@ -29,6 +29,7 @@
 
   gtag('config', 'G-W5MELYMLP5');
 </script>
+
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/styles-merged.css">
@@ -51,7 +52,7 @@
   
   <div class="probootstrap-loader"></div>
 
-  <header role="banner" class="probootstrap-header probootstrap-animate"  data-animate-effect="fadeInLeft" >
+  <header role="banner" class="probootstrap-header probootstrap-animate"  data-animate-effect="fadeInLeft"  id="home" >
     <div class="container">
         <a href="index.html" class="probootstrap-logo"><img  style="height: 20px; top=0;" src="img/hd.png"></img> Daljeet<span>.</span></a>
         
@@ -93,7 +94,7 @@
   
   
   
-  <section class="section-main"  id="home">
+  <section class="section-main" >
     <div class="container" style="height:70vh; margin-top:30vh;" >
 	 <div class=  " probootstrap-animate" >
 	    <p style="color:#22eaaa">Hi, my name is</p>
@@ -447,6 +448,10 @@
                 <input type="email" class="form-control" name="email" placeholder="Enter your email">
                 <button class="btn btn-subscribe">Send</button>
               </div>
+			  <div style="display:none" class="thankyou_message">
+			  <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+			  </h2>
+			  </div>
             </form>
           </div>
         </div>
@@ -493,7 +498,7 @@
 
         <!-- main js file -->
         <script src="js/main.js"></script>
-		
+		<script src="js/form-submission-handler.js"></script>
         <script src="js/scripts.min.js"></script>
   <script src="js/main.min.js"></script>
   <script src="js/custom.js"></script>
