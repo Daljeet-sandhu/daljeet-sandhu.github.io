@@ -4,7 +4,7 @@
 
 Portfolio Version 2  [v1](https://github.com/Daljeet-sandhu/Portfolio-v1)
 
-## Texhnoligies Used
+## Technoligies Used
 * JavaScript
 * Bootstrap
 * HTML5 and CSS3
