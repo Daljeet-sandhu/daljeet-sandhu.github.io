@@ -1,6 +1,6 @@
 ## Portfolio site 
 
-### LINK: https://daljeet-sandhu.github.io/
+### LINK: https://daljeet.tech/
 
 Portfolio Version 2  [v1](https://github.com/Daljeet-sandhu/Portfolio-v1)
 
