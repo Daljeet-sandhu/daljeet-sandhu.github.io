@@ -2,7 +2,6 @@
 
 ### LINK: https://daljeet-sandhu.github.io/
 
-Portfolio Version 2  
 
 ## Technoligies Used
 * JavaScript
@@ -12,6 +11,3 @@ Portfolio Version 2
 
 ## Screenshot
 ![picture alt](./img/screenshot.png)
-
-
-Check out Version 1-[v1](https://github.com/Daljeet-sandhu/Portfolio-v1)
